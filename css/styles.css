@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.welcome-msg{
+    font-family: 'Lilita One';
+    font-size: 3em;
+    padding-top: 1%;
+}
+
+#canvas-holder{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}

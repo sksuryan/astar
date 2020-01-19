@@ -48,7 +48,8 @@ function heuristics(node1,node2){
 }
 
 function setup(){
-    createCanvas(canvasLength,canvasBreadth);
+    let canvas = createCanvas(canvasLength,canvasBreadth);
+    canvas.parent('canvas-holder');
     for (var i=0;i<rows;i++) {
         grid[i] = new Array(columns);
     }
@@ -78,6 +79,7 @@ function setup(){
     openSet = new binaryTree();
     openSet.addToTree(start);    
 }
+
 var current;
 var neighbors;
 function draw(){
